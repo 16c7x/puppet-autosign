@@ -67,7 +67,7 @@ ini_setting { 'policy-based autosigning':
   notify  => Service['pe-puppetserver'],
 }
 
-class { ::autosign:
+class { '::autosign' :
   ensure => 'latest',
   config => {
     'general' => {
